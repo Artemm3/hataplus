@@ -1,0 +1,352 @@
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+.twitter {
+    padding-top: 2px;
+}
+
+.social ul {
+    list-style: none;
+    display: flex;
+    column-gap: 16px;
+    padding: 0;
+    margin: 0;
+    padding-top: 13px;
+}
+
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+
+}
+
+.email {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+
+}
+
+.skype {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
+    text-decoration: none;
+    display: block;
+    margin-left: 22px;
+}
+
+.popular {
+    display: flex;
+    column-gap: 40px;
+}
+
+.tel a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.telephone {
+    display: block;
+    margin-left: 20px;
+}
+
+.button {
+    padding-top: 10px;
+}
+
+.offer {
+    background: url(../images/view.webp) no-repeat;
+    position: relative;
+    background-size: cover;
+    padding: 10px;
+}
+
+.we-offer {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Arial";
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+.what {
+    font-size: 40px;
+    ;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.button a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+    padding: 13px;
+    text-decoration: none;
+
+}
+
+figure {
+    padding-bottom: 48px;
+}
+
+figcaption ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+figcaption li {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+
+
+figure a {
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+
+}
+
+figure {
+    margin: 0;
+}
+
+
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    display: flex;
+
+}
+
+h1 {
+    font-size: 30px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+
+.main-info p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.information a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.main-info {
+    display: flex;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+
+
+}
+
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 88px;
+}
+
+.categories p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    background-color: #1f1f56;
+    margin: 0;
+
+}
+
+.tell {
+    margin-right: 90px;
+}
+
+.tell a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+    text-decoration: none;
+
+}
+
+
+header {
+    background-color: #1f1f56;
+}
+
+
+
+.list ul {
+    display: flex;
+    font-size: 14px;
+    color: #b1b1d2;
+    font-family: "Arial";
+    list-style: none;
+    column-gap: 32px;
+}
+
+
+
+
+.houses a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.houses ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 2 0px;
+
+}
+
+
+.about ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 40px;
+
+}
+
+.about a {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+    font-family: "Arial";
+    text-decoration: none;
+}
+
+.contacts {
+    margin-right: 20px;
+}
+
+.contact {
+    display: flex;
+
+
+}
+
+
+
+.number {
+    display: block;
+}
+
+.mail a {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+
+
+.skypee {
+    text-decoration: none;
+}
+
+
+.list a {
+    text-decoration: none;
+    color: #b1b1d2;
+}
+
+footer {
+    background-color: #dcdce6;
+    padding: 5px;
+}
+
+.copy p {
+
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.moreinfo {
+    background-color: #ededf5;
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededf5;
+    padding: 41px 0;
+
+
+}
