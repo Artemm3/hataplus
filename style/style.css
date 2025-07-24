@@ -9,7 +9,7 @@ body {
 }
 
 .information{
-    padding: 40px 0;
+padding-bottom: 40px;
 }
 
 .info{
@@ -93,7 +93,8 @@ span {
     background: url(../images/view.webp) no-repeat;
     position: relative;
     background-size: cover;
-    padding: 10px;
+    padding: 10px 0;
+    
 }
 
 .we-offer {
@@ -101,6 +102,10 @@ span {
     color: #ffffff;
     font-family: "Arial";
     text-align: center;
+}
+
+.main-info{
+    padding-top: 20px;
 }
 
 h2 {
