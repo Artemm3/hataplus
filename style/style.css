@@ -1,7 +1,6 @@
 .wrapper {
     max-width: 960px;
     margin: auto;
-    padding: 0 10px;
     box-sizing: border-box;
 }
 
@@ -9,15 +8,26 @@ body {
     margin: 0;
 }
 
+.information{
+    padding: 40px 0;
+}
+
+.info{
+    align-items: center;
+}
+
 .header-line {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-
 }
 
 .twitter {
     padding-top: 2px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
 }
 
 .social ul {
@@ -26,45 +36,48 @@ body {
     column-gap: 16px;
     padding: 0;
     margin: 0;
-    padding-top: 13px;
 }
-
-
 
 .info {
     display: flex;
     justify-content: space-between;
-    padding: 36px;
+    padding: 36px 0;
+    column-gap: 28px;
+}
 
+span {
+    font-size: 24px;
+    line-height: 1em;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
 }
 
 .email {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     text-decoration: underline;
     color: #25252c;
     font-family: "Arial";
-
 }
 
 .skype {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #25252c;
     font-family: "Arial";
     text-decoration: none;
     display: block;
-    margin-left: 22px;
 }
 
 .popular {
     display: flex;
-    column-gap: 40px;
+    column-gap: 28px;
 }
 
 .tel a {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3em;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
@@ -73,11 +86,7 @@ body {
 
 .telephone {
     display: block;
-    margin-left: 20px;
-}
-
-.button {
-    padding-top: 10px;
+    text-align: end;
 }
 
 .offer {
@@ -106,7 +115,6 @@ h2 {
 
 .what {
     font-size: 40px;
-    ;
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
@@ -115,7 +123,7 @@ h2 {
 
 .button a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
@@ -124,11 +132,16 @@ h2 {
     border: 2px solid #fd8300;
     padding: 13px;
     text-decoration: none;
-
+    display: inline-block;
 }
 
-figure {
-    padding-bottom: 48px;
+
+
+hr {
+    margin: 35px 0;
+    padding: 1px 0;
+    max-width: 713px;
+    background-color: #e4e4ec;
 }
 
 figcaption ul {
@@ -139,37 +152,32 @@ figcaption ul {
 
 figcaption li {
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999a6;
     font-family: "Arial";
 }
 
-
-
 figure a {
     font-size: 14px;
     text-decoration: none;
-    margin-bottom: 10px;
     color: #1f1f56;
     font-weight: bold;
     font-family: "Arial";
-
+    margin: 5px 0 7px 0;
+    display: block;
 }
 
 figure {
     margin: 0;
 }
 
-
-
 h3 {
     font-size: 24px;
-    line-height: 24px;
+    line-height: 1em;
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
     display: flex;
-
 }
 
 h1 {
@@ -179,15 +187,14 @@ h1 {
     font-family: "Roboto Slab";
 }
 
-
 .main-info p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.4em;
     color: #666666;
     font-family: "Arial";
 }
 
-.information a {
+.more-about-us {
     font-size: 14px;
     text-decoration: underline;
     color: #fd8300;
@@ -197,40 +204,42 @@ h1 {
 
 .main-info {
     display: flex;
+    column-gap: 28px;
 }
 
 .categories ul {
     list-style: none;
     padding: 0;
-
-
+    min-width: 220px;
 }
 
-
-.categories {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 88px;
+.categories a {
+    display: block;
+    background-color: #e4e4ec;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #25252c;
+    font-family: "Arial";
+    border-bottom: 1px solid #cecedd;
+    text-decoration: none;
 }
 
-.categories p {
+.projects {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
     background-color: #1f1f56;
     margin: 0;
-
 }
 
-.tell {
-    margin-right: 90px;
-}
+
+
 
 .tell a {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5em;
     color: #25252c;
     font-weight: bold;
     font-family: "Arial";
@@ -238,12 +247,9 @@ h1 {
 
 }
 
-
 header {
     background-color: #1f1f56;
 }
-
-
 
 .list ul {
     display: flex;
@@ -252,14 +258,12 @@ header {
     font-family: "Arial";
     list-style: none;
     column-gap: 32px;
+    padding: 0;
 }
-
-
-
 
 .houses a {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8em;
     color: #666666;
     font-family: "Arial";
     text-decoration: none;
@@ -268,56 +272,49 @@ header {
 .houses ul {
     list-style: none;
     margin: 0;
-    padding-left: 2 0px;
-
+    padding: 0;
+    
 }
 
+.contact{
+    column-gap: 80px;
+}
 
 .about ul {
     list-style: none;
     margin: 0;
-    margin-right: 40px;
-
+    padding: 0;
 }
+
 
 .about a {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 1.8em;
     color: #666666;
     font-family: "Arial";
     text-decoration: none;
 }
 
-.contacts {
-    margin-right: 20px;
-}
-
 .contact {
     display: flex;
-
-
 }
-
-
 
 .number {
     display: block;
+    text-align: end;
 }
 
 .mail a {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5em;
     display: block;
     color: #25252c;
     font-family: "Arial";
 }
 
-
-
 .skypee {
     text-decoration: none;
 }
-
 
 .list a {
     text-decoration: none;
@@ -326,13 +323,23 @@ header {
 
 footer {
     background-color: #dcdce6;
-    padding: 5px;
+    padding: 2px;
+}
+
+.houses{
+    min-width: 239px;
+}
+.about{
+    min-width: 219px;
+}
+
+.contact{
+    min-width: 449px;
 }
 
 .copy p {
-
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.3em;
     color: #9999a6;
     font-family: "Arial";
     text-align: center;
@@ -347,6 +354,6 @@ footer {
     justify-content: space-between;
     background-color: #ededf5;
     padding: 41px 0;
-
+    column-gap: 20px;
 
 }
