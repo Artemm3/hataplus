@@ -8,11 +8,15 @@ body {
     margin: 0;
 }
 
-.information{
-padding-bottom: 40px;
+sup {
+    font-size: 15px;
 }
 
-.info{
+.information {
+    padding-bottom: 40px;
+}
+
+.info {
     align-items: center;
 }
 
@@ -25,7 +29,7 @@ padding-bottom: 40px;
     padding-top: 2px;
 }
 
-.social{
+.social {
     display: flex;
     align-items: center;
 }
@@ -84,6 +88,8 @@ span {
     text-decoration: none;
 }
 
+
+
 .telephone {
     display: block;
     text-align: end;
@@ -93,8 +99,8 @@ span {
     background: url(../images/view.webp) no-repeat;
     position: relative;
     background-size: cover;
-    padding: 10px 0;
-    
+    padding: 50px 0;
+
 }
 
 .we-offer {
@@ -102,9 +108,10 @@ span {
     color: #ffffff;
     font-family: "Arial";
     text-align: center;
+    margin-bottom: 0;
 }
 
-.main-info{
+.main-info {
     padding-top: 20px;
 }
 
@@ -116,6 +123,7 @@ h2 {
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: center;
+    margin-bottom: 12px;
 }
 
 .what {
@@ -124,6 +132,8 @@ h2 {
     font-weight: bold;
     font-family: "Arial";
     text-align: center;
+    margin-top: 16px;
+    margin-bottom: 0;
 }
 
 .button a {
@@ -135,18 +145,23 @@ h2 {
     border-radius: 25px;
     background-color: #ffffff;
     border: 2px solid #fd8300;
-    padding: 13px;
+    padding: 13px 40px;
     text-decoration: none;
     display: inline-block;
 }
 
+.twoo{
+    font-size: 7px;
+}
 
+.two{
+    font-size: 9px;
+}
 
 hr {
     margin: 35px 0;
-    padding: 1px 0;
-    max-width: 713px;
-    background-color: #e4e4ec;
+    border: none;
+    border-top:1px solid #e4e4ec;
 }
 
 figcaption ul {
@@ -229,7 +244,7 @@ h1 {
     text-decoration: none;
 }
 
-.projects {
+.projects a {
     font-size: 16px;
     line-height: 1.5em;
     color: #ffffff;
@@ -237,10 +252,13 @@ h1 {
     font-family: "Roboto Slab";
     background-color: #1f1f56;
     margin: 0;
+    border-radius: 3px 3px 0 0;
 }
 
-
-
+.ready a {
+    border: none;
+    border-radius: 0 0 3px 3px;
+}
 
 .tell a {
     font-size: 18px;
@@ -278,10 +296,10 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    
+
 }
 
-.contact{
+.contact {
     column-gap: 80px;
 }
 
@@ -331,14 +349,15 @@ footer {
     padding: 2px;
 }
 
-.houses{
+.houses {
     min-width: 239px;
 }
-.about{
+
+.about {
     min-width: 219px;
 }
 
-.contact{
+.contact {
     min-width: 449px;
 }
 
