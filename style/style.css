@@ -37,7 +37,7 @@ sup {
 .social ul {
     list-style: none;
     display: flex;
-    column-gap: 16px;
+    column-gap: 26px;
     padding: 0;
     margin: 0;
 }
@@ -45,7 +45,7 @@ sup {
 .info {
     display: flex;
     justify-content: space-between;
-    padding: 36px 0;
+    padding: 30px 0;
     column-gap: 28px;
 }
 
@@ -87,8 +87,6 @@ span {
     font-family: "Arial";
     text-decoration: none;
 }
-
-
 
 .telephone {
     display: block;
@@ -136,6 +134,7 @@ h2 {
     margin-bottom: 0;
 }
 
+
 .button a {
     font-size: 16px;
     line-height: 1.5em;
@@ -145,23 +144,25 @@ h2 {
     border-radius: 25px;
     background-color: #ffffff;
     border: 2px solid #fd8300;
-    padding: 13px 40px;
+    padding: 12px 40px;
     text-decoration: none;
     display: inline-block;
 }
 
-.twoo{
+.twoo {
     font-size: 7px;
 }
 
-.two{
+.two {
     font-size: 9px;
 }
+
+
 
 hr {
     margin: 35px 0;
     border: none;
-    border-top:1px solid #e4e4ec;
+    border-top: 1px solid #e4e4ec;
 }
 
 figcaption ul {
@@ -233,15 +234,38 @@ h1 {
     min-width: 220px;
 }
 
+.categories li {
+    background-color: #e4e4ec;
+}
+
+.sold a {
+    background-color: #cecedd;
+    font-size: 14px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.around a {
+    background-color: #fd8300;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
 .categories a {
     display: block;
-    background-color: #e4e4ec;
     padding: 10px 15px;
     font-size: 14px;
     color: #25252c;
     font-family: "Arial";
     border-bottom: 1px solid #cecedd;
     text-decoration: none;
+    line-height: 1.7em;
+}
+
+.sell a {
+    color: #666666;
+    font-family: "Arial";
 }
 
 .projects a {
@@ -254,6 +278,7 @@ h1 {
     margin: 0;
     border-radius: 3px 3px 0 0;
 }
+
 
 .ready a {
     border: none;
