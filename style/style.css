@@ -245,10 +245,15 @@ h1 {
     font-family: "Arial";
 }
 
+.sell,
+.selll {
+    background-color: #cecedd;
+}
+
 .around a {
     background-color: #fd8300;
     font-size: 14px;
-    color: #ffffff;
+    color: #fff;
     font-family: "Arial";
 }
 
@@ -256,11 +261,14 @@ h1 {
     display: block;
     padding: 10px 15px;
     font-size: 14px;
-    color: #25252c;
     font-family: "Arial";
     border-bottom: 1px solid #cecedd;
     text-decoration: none;
     line-height: 1.7em;
+}
+
+.last {
+    color: #25252c;
 }
 
 .sell a {
@@ -271,7 +279,7 @@ h1 {
 .projects a {
     font-size: 16px;
     line-height: 1.5em;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
     background-color: #1f1f56;
@@ -283,6 +291,7 @@ h1 {
 .ready a {
     border: none;
     border-radius: 0 0 3px 3px;
+    color: #25252c;
 }
 
 .tell a {
