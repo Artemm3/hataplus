@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    cursor: url('/cursor/red.cur'), auto;
 }
 
 sup {
@@ -14,6 +15,49 @@ sup {
 
 .information {
     padding-bottom: 40px;
+}
+
+.list li:hover>a {
+    color: #fd8300;
+}
+
+.list a {
+    transition: 1s ease all;
+}
+
+.tel a:hover {
+    background-color: #1f1f56;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.tel a {
+    transition: 1s all ease;
+}
+
+.contacts a {
+    transition: 1s all ease;
+}
+
+.contacts a:hover {
+    text-decoration: none;
+    color: #fd8300;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.button a:hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+.button a:hover {
+    transition: 1s all ease;
+}
+
+a:hover {
+    cursor: url('/cursor/pointer.cur'), auto;
 }
 
 .info {
@@ -221,6 +265,24 @@ h1 {
     color: #fd8300;
     font-weight: bold;
     font-family: "Arial";
+    transition: 1s all ease;
+}
+
+.more-about-us:hover {
+    background-color: #1f1f56;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+figure a:hover {
+    text-decoration: underline #fd8300;
+    color: #fd8300;
+}
+
+figure a {
+    transition: 1s all ease;
 }
 
 .main-info {
@@ -236,6 +298,16 @@ h1 {
 
 .categories li {
     background-color: #e4e4ec;
+}
+
+.categories a {
+    transition: 1s all ease;
+}
+
+.categories li:hover>a {
+    padding: 10px;
+    background-color: #fd8300;
+    color: #fff;
 }
 
 .sold a {
@@ -352,6 +424,15 @@ header {
     text-decoration: none;
 }
 
+.about a {
+    transition: 1s all ease;
+}
+
+.about li:hover>a {
+    text-decoration: underline #fd8300;
+    color: #fd8300;
+}
+
 .contact {
     display: flex;
 }
@@ -387,12 +468,43 @@ footer {
     min-width: 239px;
 }
 
+.houses a {
+    transition: 1s all ease;
+}
+
+.houses li:hover>a {
+    color: #fd8300;
+    text-decoration: underline #fd8300;
+}
+
 .about {
     min-width: 219px;
 }
 
 .contact {
     min-width: 449px;
+}
+
+.mail a {
+    transition: 1s all ease;
+}
+
+.mail a:hover {
+    text-decoration: none;
+    color: #fd8300;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.tell a{
+    transition: 1s all ease;
+}
+
+.tell a:hover {
+    text-decoration: none;
+    color: #fd8300;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .copy p {
