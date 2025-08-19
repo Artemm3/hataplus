@@ -32,6 +32,74 @@ sup {
     padding: 2px;
 }
 
+.tel {
+    position: relative;
+}
+
+.telephone:before {
+    position: absolute;
+    content: "";
+    background: url(../images/phone.svg);
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    top: 1px;
+}
+
+
+.contacts {
+    position: relative;
+}
+
+.email:before {
+    content: "";
+    position: absolute;
+    content: "";
+    background: url(../images/email.svg) no-repeat;
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    top: 6px;
+}
+
+.skype:before {
+    position: absolute;
+    content: "";
+    background: url(../images/skype.svg);
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    top: 26px;
+}
+
+.mail {
+    position: relative;
+}
+
+.skypee:before {
+    position: absolute;
+    content: "";
+    background: url(../images/skype.svg);
+    width: 17px;
+    height: 17px;
+    left: -30px;
+    top: 26px;
+}
+
+.tell {
+    position: relative;
+}
+
+.number:before {
+    position: absolute;
+    content: "";
+    background: url(../images/phone.svg);
+    width: 17px;
+    height: 17px;
+    left: -25px;
+    top: 3px;
+}
+
 .tel a {
     transition: 1s all ease;
 }
@@ -496,7 +564,7 @@ footer {
     padding: 2px;
 }
 
-.tell a{
+.tell a {
     transition: 1s all ease;
 }
 
