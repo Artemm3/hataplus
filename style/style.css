@@ -13,6 +13,7 @@ sup {
     font-size: 15px;
 }
 
+
 .information {
     padding-bottom: 40px;
 }
@@ -29,14 +30,13 @@ sup {
     background-color: #1f1f56;
     color: #fff;
     border-radius: 5px;
-    padding: 2px;
 }
 
 .tel {
     position: relative;
 }
 
-.telephone:before {
+.phonne-img {
     position: absolute;
     content: "";
     background: url(../images/phone.svg);
@@ -51,46 +51,30 @@ sup {
     position: relative;
 }
 
-.email:before {
-    content: "";
-    position: absolute;
-    content: "";
-    background: url(../images/email.svg) no-repeat;
-    width: 17px;
-    height: 17px;
-    left: -30px;
-    top: 6px;
-}
-
-.skype:before {
+.skype-img {
     position: absolute;
     content: "";
     background: url(../images/skype.svg);
     width: 17px;
     height: 17px;
-    left: -30px;
+    left: 0%;
     top: 26px;
 }
+
 
 .mail {
     position: relative;
 }
 
-.skypee:before {
-    position: absolute;
-    content: "";
-    background: url(../images/skype.svg);
-    width: 17px;
-    height: 17px;
-    left: -30px;
-    top: 26px;
+.skype {
+    padding-left: 20px;
 }
 
 .tell {
     position: relative;
 }
 
-.number:before {
+.img-phone {
     position: absolute;
     content: "";
     background: url(../images/phone.svg);
@@ -112,7 +96,6 @@ sup {
     text-decoration: none;
     color: #fd8300;
     border-radius: 5px;
-    padding: 2px;
 }
 
 .button a:hover {
@@ -313,7 +296,7 @@ h3 {
     display: flex;
 }
 
-h1 {
+.company {
     font-size: 30px;
     color: #24242b;
     font-weight: 700;
@@ -337,9 +320,7 @@ h1 {
 }
 
 .more-about-us:hover {
-    background-color: #1f1f56;
-    color: #fff;
-    padding: 5px;
+    color: #1f1f56;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -373,7 +354,7 @@ figure a {
 }
 
 .categories li:hover>a {
-    padding: 10px;
+
     background-color: #fd8300;
     color: #fff;
 }
@@ -594,4 +575,171 @@ footer {
     padding: 41px 0;
     column-gap: 20px;
 
+}
+
+.price {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.cotage {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    margin-bottom: 5px;
+}
+
+.service {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.time {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.available {
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 21px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+.read {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    transition: 1s;
+}
+
+.read:hover {
+    color: #1f1f56;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+table {
+    width: 100%;
+}
+
+.popularr {
+    display: flex;
+    column-gap: 28px;
+    padding-bottom: 50px;
+}
+
+.emaill-img {
+    position: absolute;
+    top: 5%;
+    left: -15%;
+}
+
+.skypee-img {
+    position: absolute;
+    top: 25%;
+    left: -15%;
+}
+
+.our {
+    position: relative;
+
+}
+
+.dog:before{
+    z-index: 2;
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    left: 100%;
+    height: 100%;
+    width: 15px;
+}
+
+.our ul {
+    display: none;
+    width: 125px;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    background-color: #e4e4ec;
+    border-radius: 3px;
+}
+
+.drop li {
+    padding: 6px 10px;
+}
+
+
+.list li:hover .drop {
+    display: block;
+}
+
+.dog {
+    position: relative;
+}
+
+.dog ul {
+    position: absolute;
+    top: 0%;
+    left: 105%;
+    border-radius: 3px;
+}
+
+thead th {
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    border-radius: 3px;
+    padding: 0;
+}
+
+thead tr {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #274569;
+    background-color: #1f1f56;
+}
+
+.drop li:hover .sub-drop {
+    display: block;
+}
+
+.drop li:hover>a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: "Arial";
+}
+
+.drop li:hover {
+    border-radius: 3px;
+    background-color: #fd8300;
+}
+
+.drop a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #25252c;
+    font-family: "Arial";
 }
