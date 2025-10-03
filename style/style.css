@@ -103,9 +103,10 @@ sup {
     color: #fff;
 }
 
-.button a:hover {
-    transition: 1s all ease;
+.button a {
+    transition: 1s all cubic-bezier(0,1.89,0,.33);
 }
+
 
 a:hover {
     cursor: url('/cursor/pointer.cur'), auto;
@@ -542,7 +543,6 @@ footer {
     text-decoration: none;
     color: #fd8300;
     border-radius: 5px;
-    padding: 2px;
 }
 
 .tell a {
@@ -553,7 +553,6 @@ footer {
     text-decoration: none;
     color: #fd8300;
     border-radius: 5px;
-    padding: 2px;
 }
 
 .copy p {
@@ -575,6 +574,10 @@ footer {
     padding: 41px 0;
     column-gap: 20px;
 
+}
+
+.prices{
+    padding-bottom: 20px;
 }
 
 .price {
@@ -658,10 +661,9 @@ table {
 
 .our {
     position: relative;
-
 }
 
-.dog:before{
+.dog:before {
     z-index: 2;
     content: "";
     position: absolute;
@@ -669,6 +671,17 @@ table {
     left: 100%;
     height: 100%;
     width: 15px;
+}
+
+.our:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+
+    top: 100%;
+    height: 4px;
+    width: 100px;
 }
 
 .our ul {
@@ -702,13 +715,74 @@ table {
     border-radius: 3px;
 }
 
+tbody {
+    border-collapse: collapse;
+    background-color: #e4e4ec;
+}
+
+th {
+
+    border: 1px solid #274569;
+}
+
+td {
+    border: 1px solid #cecedd;
+}
+
+.names {
+    padding: 15px;
+    text-align: left;
+}
+
+td{
+    transition: 1s all cubic-bezier(0,1.89,0,.33);
+}
+
+td:hover{
+    color: #fff;
+}
+
+tr{
+  transition: 1s all cubic-bezier(0,1.89,0,.33);  
+}
+
+tr:hover{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.pricee {
+    padding: 15px;
+    text-align: right;
+}
+
+td:first-child {
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+}
+
+thead {
+    background-color: #1f1f56;
+}
+
+table {
+    border-collapse: collapse;
+}
+
 thead th {
     font-size: 14px;
     line-height: 24px;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
-    border-radius: 3px;
     padding: 0;
 }
 
@@ -716,7 +790,6 @@ thead tr {
     margin: 0;
     padding: 0;
     border: 1px solid #274569;
-    background-color: #1f1f56;
 }
 
 .drop li:hover .sub-drop {
