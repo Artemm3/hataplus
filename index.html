@@ -17,18 +17,18 @@
             <div class="header-line">
                 <div class="list">
                     <ul>
-                        <li><a href="price.html">Головна</a></li>
-                        <li><a href="price.html">Про компанію</a></li>
+                        <li><a href="#">Головна</a></li>
+                        <li><a href="#">Про компанію</a></li>
                         <li><a href="price.html">Наші будівлі</a></li>
                         <li><a href="price.html">Акції</a></li>
-                        <li><a href="price.html">Контакти</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
                     </ul>
                 </div>
                 <div class="social">
                     <ul>
-                        <li><a href="price.html"><img src="images/fb.svg" alt="фейсбук хата плюс"></a></li>
-                        <li class="twitter"><a href="price.html"><img src="images/twitter.svg" alt="твіттер хата плюс"></a></li>
-                        <li><a href="price.html"><img src="images/inst.svg" alt="інстаграм "></a></li>
+                        <li><a href="#"><img src="images/fb.svg" alt="фейсбук хата плюс"></a></li>
+                        <li class="twitter"><a hreff="#"><img src="images/twitter.svg" alt="твіттер хата плюс"></a></li>
+                        <li><a href="#"><img src="images/inst.svg" alt="інстаграм "></a></li>
                     </ul>
                 </div>
             </div>
@@ -51,10 +51,21 @@
                     <img class="skype-img" src="images/skype.svg" alt="скайп хата+"> <a class="skype"
                         href="skype:hataplus">hataplus</a>
                 </div>
-                <div class="button">
-                    <a href="price.html">Замовити дзвінок</a>
+                <div id="openPopup" class="button">
+                    <a href="#">Замовити дзвінок</a>
+                </div>
+                <div class="back" id="back"></div>
+                <div class="popup" id="popup">
+                    <img id="cancelPopup" src="images/close.svg" alt="закрити попап">
+                    <h3>Замовити дзвінок</h3>
+                    <form class="pop" action="php/popup.php" method="post">
+                        <input type="text" placeholder="Ваше ім'я">
+                        <input type="tel" placeholder="Номер телефону">
+                        <button class="closePop" id="closePopup">Відправити</button>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
         <div class="offer">
             <h2>Пропозиція місяця</h2>
@@ -76,14 +87,14 @@
                         по співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна
                         ділянка, на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити
                         сауну, поставити альтанку і барбекю.</p>
-                    <a class="more-about-us" href="price.html">Детальніше про нас</a>
+                    <a class="more-about-us" href="#">Детальніше про нас</a>
                     <hr>
                     <h3>Популярні проекти</h3>
                     <div class="popular">
                         <figure>
                             <img src="images/House.webp" alt="Будинок зроблений хатою+">
                             <figcaption>
-                                <a href="price.html">EDMONTON (338 м<sup class="two">2</sup>)</a>
+                                <a href="#">EDMONTON (338 м<sup class="two">2</sup>)</a>
                                 <ul>
                                     <li>Загальна площа будови: 312 м<sup class="twoo">2</sup></li>
                                     <li>Кількість спалень: 4</li>
@@ -93,8 +104,8 @@
                         </figure>
                         <figure>
                             <img src="images/Housetwo.webp" alt="Будинок хата+">
-                            <figcaption>
-                                <a href="price.html">MONTREAL (332 м<sup class="two">2</sup>)</a>
+                            <figcaption id="second">
+                                <a href="#">MONTREAL (332 м<sup class="two">2</sup>)</a>
                                 <ul>
                                     <li>Загальна площа будови: 290 м<sup class="twoo">2</sup></li>
                                     <li>Кількість спалень: 3</li>
@@ -105,7 +116,7 @@
                         <figure>
                             <img src="images/Housethree.webp" alt="Будинок хата+">
                             <figcaption>
-                                <a href="price.html">CALGARY (294 м<sup class="two">2</sup>)</a>
+                                <a href="#">CALGARY (294 м<sup class="two">2</sup>)</a>
                                 <ul>
                                     <li>Загальна площа будови: 272 м<sup class="twoo">2</sup></li>
                                     <li> Кількість спалень: 3</li>
@@ -113,23 +124,31 @@
                                 </ul>
                             </figcaption>
                         </figure>
+                        <div class="img-popup-back" id="imgPopupBack">
+                            <img id="imgPopupImage" src="" alt="Збільшене зображення">
+                        </div>
+
                     </div>
                 </div>
                 <aside>
                     <div class="categories">
-                        <ul>
+                        <ul class="menu">
                             <li class="projects">
-                                <a class="projects" href="price.html">Категоріїї проектів</a>
+                                <p>Категорії проєктів</p>
                             </li>
-                            <li><a class="last" href="price.html">Генеральний план</a></li>
-                            <li class="around"><a href="price.html">Навколишнє середовище</a></li>
-                            <li class="sell"><a href="price.html">Продані</a></li>
-                            <li class="sell"><a class="selll" href="price.html">Заброньованні</a></li>
-                            <li class="sell"><a href="price.html">В процесі будівництва</a></li>
-                            <li><a class="last" href="price.html">Умови придбання</a></li>
-                            <li><a class="last" href="price.html">Загородні котеджі</a></li>
-                            <li><a class="last" href="price.html">Інфраструктура</a></li>
-                            <li class="ready"><a class="ready" href="price.html">Готові будинки</a></li>
+                            <li><a href="#">Генеральний план</a></li>
+                            <li class="dropdown-parent"><a href="#">Навколишнє середовище</a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Продані</a></li>
+                                    <li><a href="#">Заброньованні</a></li>
+                                    <li><a href="#">В процесі будівництва</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Умови придбання</a></li>
+                            <li><a href="#">Загородні котеджі</a></li>
+                            <li><a href="#">Інфраструктура</a></li>
+                            <li><a href="#">Готові будинки</a></li>
                         </ul>
                     </div>
 
@@ -142,17 +161,17 @@
             <div class="main-wrap wrapper">
                 <div class="houses">
                     <ul>
-                        <li><a href="price.html">Будинки<a>
+                        <li><a href="#">Будинки<a>
                         </li>
-                        <li><a href="price.html">
+                        <li><a href="#">
                                 Інфраструктура
                             </a>
                         </li>
-                        <li><a href="price.html">
+                        <li><a href="#">
                                 Сервіс
                             </a>
                         </li>
-                        <li><a href="price.html">
+                        <li><a href="#">
                                 Новини
                             </a>
                         </li>
@@ -160,13 +179,13 @@
                 </div>
                 <div class="about">
                     <ul>
-                        <li><a href="price.html">Про компанію</a>
+                        <li><a href="#">Про компанію</a>
                         </li>
-                        <li><a href="price.html">
+                        <li><a href="#">
                                 Страхування
                             </a>
                         </li>
-                        <li><a href="price.html">Контакти</a></li>
+                        <li><a href="#">Контакти</a></li>
                     </ul>
                 </div>
                 <div class="contact">
@@ -192,7 +211,52 @@
             </div>
         </div>
     </footer>
+    <script>
+        let open = document.getElementById("openPopup");
+        let back = document.getElementById("back");
+        let popup = document.getElementById("popup");
+        let close = document.getElementById("closePopup");
+        let cancel = document.getElementById("cancelPopup")
+        let images = document.querySelectorAll(".popular figure img");
+        let popupBack = document.getElementById("imgPopupBack");
+        let popupImg = document.getElementById("imgPopupImage");
 
+
+        open.onclick = function () {
+            back.style.display = "block";
+            popup.style.display = "block";
+        }
+
+        back.onclick = function () {
+            back.style.display = "none";
+            popup.style.display = "none";
+        }
+
+        close.onclick = function () {
+            back.style.display = "none";
+            popup.style.display = "none";
+        }
+
+        cancel.onclick = function () {
+            back.style.display = "none";
+            popup.style.display = "none";
+        }
+        images.forEach(function (img) {
+            img.onclick = function () {
+                popupImg.src = img.src
+            }
+        })
+        images.forEach(function (img) {
+            img.onclick = function () {
+                popupImg.src = img.src;
+                popupBack.style.display = "flex";
+            };
+        });
+
+        popupBack.onclick = function () {
+            popupBack.style.display = "none";
+        };
+    </script>
 </body>
 
 </html>

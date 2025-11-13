@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <title>Ціни хата+ більше про нас.Наші роботи елітні будинки,собачі будки.</title>
+
 </head>
 
 <body>
@@ -17,7 +18,7 @@
             <div class="header-line">
                 <div class="list">
                     <ul class="up">
-                        <li><a href="#">Головна</a></li>
+                        <li><a href="contacts.html">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
                         <li class="our"><a href="#">Наші будівлі</a>
                             <ul class="drop">
@@ -35,7 +36,7 @@
                             </ul>
                         </li>
                         <li><a href="#">Акції</a></li>
-                        <li><a href="#">Контакти</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
                     </ul>
                 </div>
                 <div class="social">
@@ -65,8 +66,18 @@
                     <img class="skype-img" src="images/skype.svg" alt="скайп хата+"> <a class="skype"
                         href="skype:hataplus">hataplus</a>
                 </div>
-                <div class="button">
+                <div id="openPopup" class="button">
                     <a href="#">Замовити дзвінок</a>
+                </div>
+                <div class="back" id="back"></div>
+                <div class="popup" id="popup">
+                    <img id="cancelPopup" src="images/close.svg" alt="закрити попап">
+                    <h3>Замовити дзвінок</h3>
+                    <form class="pop" action="php/popup.php" method="post">
+                        <input type="text" placeholder="Ваше ім'я">
+                        <input type="tel" placeholder="Номер телефону">
+                        <button class="closePop" id="closePopup">Відправити</button>
+                    </form>
                 </div>
             </div>
             <div class="prices">
@@ -181,6 +192,9 @@
                         </ul>
                     </figcaption>
                 </figure>
+                <div class="img-popup-back" id="imgPopupBack">
+                    <img id="imgPopupImage" src="" alt="Збільшене зображення">
+                </div>
             </div>
         </div>
         <div class="moreinfo">
@@ -231,13 +245,56 @@
 
         </div>
     </main>
-    <div class="footer">
-        <div class="wrapper">
-            <div class="copy">
-                <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="copy">
+                    <p>&copy; Будівельна компанія “Хата Плюс” 2018.</p>
+                </div>
             </div>
+
         </div>
-    </div>
+    </footer>
+    <script>
+        let open = document.getElementById("openPopup");
+        let back = document.getElementById("back");
+        let popup = document.getElementById("popup");
+        let close = document.getElementById("closePopup");
+        let cancel = document.getElementById("cancelPopup")
+        let images = document.querySelectorAll(".popularr figure img");
+        let popupBack = document.getElementById("imgPopupBack");
+        let popupImg = document.getElementById("imgPopupImage");
+
+        open.onclick = function () {
+            back.style.display = "block";
+            popup.style.display = "block";
+        }
+
+        back.onclick = function () {
+            back.style.display = "none";
+            popup.style.display = "none";
+        }
+
+        close.onclick = function () {
+            back.style.display = "none";
+            popup.style.display = "none";
+        }
+
+        cancel.onclick = function () {
+            back.style.display = "none";
+            popup.style.display = "none";
+        }
+        images.forEach(function (img) {
+            img.onclick = function () {
+                popupImg.src = img.src;
+                popupBack.style.display = "flex";
+            }
+        })
+
+        popupBack.onclick = function () {
+            popupBack.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
