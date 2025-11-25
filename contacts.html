@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Хата+ конткатки про нас наше місте знаходження.</title>
 </head>
 
@@ -15,8 +15,14 @@
     <header>
         <div class="wrapper">
             <div class="header-line">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="list">
-                    <ul>
+                    <img id="cancelList" src="images/close.svg" alt="закрити попап">
+                    <ul class="up">
                         <li><a href="index.html">Головна</a></li>
                         <li><a href="price.html">Про компанію</a></li>
                         <li><a href="price.html">Наші будівлі</a></li>
@@ -49,8 +55,7 @@
                 <div class="contacts">
                     <img class="email-img" src="images/email.svg" alt="почта хата+"> <a class="email"
                         href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
-                    <img class="skype-img" src="images/skype.svg" alt="скайп хата+"> <a class="skype"
-                        href="skype:hataplus">hataplus</a>
+                    <a class="skype" href="skype:hataplus">hataplus</a>
                 </div>
                 <div id="openPopup" class="button">
                     <a href="#">Замовити дзвінок</a>
@@ -66,9 +71,9 @@
                     </form>
                 </div>
             </div>
+            <h1 class="numbers">Контакти</h1>
             <div class="contakts">
                 <div class="office">
-                    <h1>Контакти</h1>
                     <h4>Наш офіс</h4>
                     <ul class="about-contacts">
                         <li class="location"><a href="#">с. Війтівці, Хмельницька обл. 27500 </a></li>
@@ -97,16 +102,16 @@
                 </div>
             </div>
             <div class="forms">
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d727.8927713940145!2d26.440205176335468!3d49.49947909193342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDI5JzU5LjEiTiAyNsKwMjYnMjYuNCJF!5e0!3m2!1suk!2sua!4v1761049349398!5m2!1suk!2sua"
-                        width="466" height="340" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d727.8927713940145!2d26.440205176335468!3d49.49947909193342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDnCsDI5JzU5LjEiTiAyNsKwMjYnMjYuNCJF!5e0!3m2!1suk!2sua!4v1761049349398!5m2!1suk!2sua"
+                    width="560" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 <div class="formas">
                     <h4>Форма зворотнього зв’язку</h4>
 
-                    <form class="contact-form" action="php/sendmail.php" method="post">
+                    <form class="contact-form" action="hata.php" method="post">
                         <input id="text" type="text" name="name" placeholder="Ваше ім’я" required>
                         <input id="tel" type="tel" name="phone" placeholder="Телефон" required>
                         <input id="tema" type="text" name="subject" placeholder="Тема повідомлення" class="full">
@@ -119,6 +124,7 @@
                                 <span class="form-span">Я бажаю отримувати останні новини</span>
                             </label>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -163,8 +169,7 @@
                     <div class="mail">
                         <img class="emaill-img" src="images/email.svg" alt="почта хата+"> <a class="email"
                             href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
-                        <img class="skypee-img" src="images/skype.svg" alt="скайп хата+"> <a class="skypee"
-                            href="skype:hataplus">hataplus</a>
+                        <a class="skypee" href="skype:hataplus">hataplus</a>
                     </div>
                 </div>
             </div>
@@ -183,7 +188,25 @@
         let back = document.getElementById("back");
         let popup = document.getElementById("popup");
         let close = document.getElementById("closePopup");
-        let cancel = document.getElementById("cancelPopup")
+        let cancel = document.getElementById("cancelPopup");
+        let hamburger = document.querySelector(".hamburger");
+        let menu = document.querySelector(".list ul");
+        let cancelList = document.getElementById("cancelList");
+        let active = document.querySelector(".active-burger");
+
+        hamburger.onclick = function () {
+            menu.classList.add("active-burger");
+            cancelList.style.display = "block";
+        };
+        cancelList.onclick = function () {
+            menu.classList.remove("active-burger");
+            cancelList.style.display = "none";
+        };
+        open.onclick = function () {
+            back.style.display = "block";
+            popup.style.display = "block";
+        }
+
 
         open.onclick = function () {
             back.style.display = "block";

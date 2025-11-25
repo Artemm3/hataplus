@@ -15,8 +15,14 @@
     <header>
         <div class="wrapper">
             <div class="header-line">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="list">
-                    <ul>
+                    <img id="cancelList" src="images/close.svg" alt="закрити попап">
+                    <ul class="up">
                         <li><a href="#">Головна</a></li>
                         <li><a href="#">Про компанію</a></li>
                         <li><a href="price.html">Наші будівлі</a></li>
@@ -48,8 +54,7 @@
                 <div class="contacts">
                     <img class="email-img" src="images/email.svg" alt="почта хата+"> <a class="email"
                         href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
-                    <img class="skype-img" src="images/skype.svg" alt="скайп хата+"> <a class="skype"
-                        href="skype:hataplus">hataplus</a>
+                    <a class="skype" href="skype:hataplus">hataplus</a>
                 </div>
                 <div id="openPopup" class="button">
                     <a href="#">Замовити дзвінок</a>
@@ -197,8 +202,7 @@
                     <div class="mail">
                         <img class="emaill-img" src="images/email.svg" alt="почта хата+"> <a class="email"
                             href="mailto:hataplus@hata.com.ua">hataplus@hata.com.ua</a>
-                        <img class="skypee-img" src="images/skype.svg" alt="скайп хата+"> <a class="skypee"
-                            href="skype:hataplus">hataplus</a>
+                        <a class="skypee" href="skype:hataplus">hataplus</a>
                     </div>
                 </div>
             </div>
@@ -220,13 +224,23 @@
         let images = document.querySelectorAll(".popular figure img");
         let popupBack = document.getElementById("imgPopupBack");
         let popupImg = document.getElementById("imgPopupImage");
-
-
+        let hamburger = document.querySelector(".hamburger");
+        let cancelList = document.getElementById("cancelList");
+        let menu = document.querySelector(".list ul");
+        hamburger.onclick = function () {
+            menu.classList.add("active-burger");
+            cancelList.style.display = "block";
+        };
+        cancelList.onclick = function () {
+            menu.classList.remove("active-burger");
+            cancelList.style.display = "none";
+        };
         open.onclick = function () {
             back.style.display = "block";
             popup.style.display = "block";
         }
 
+    
         back.onclick = function () {
             back.style.display = "none";
             popup.style.display = "none";
