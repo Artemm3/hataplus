@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 960px;
+    max-width: 1024px;
     padding: 0 10px;
     margin: auto;
     box-sizing: border-box;
@@ -63,13 +63,17 @@ sup {
     position: absolute;
     background: url(../images/skype.svg) no-repeat;
     width: 17px;
-    height: 17px;
+    height: 18px;
     left: 0;
+}
+
+aside {
+    order: -1;
+    width: 100%;
 }
 
 
 .mail {
-    margin-top: 10px;
     position: relative;
     padding-bottom: 10px;
 }
@@ -148,6 +152,7 @@ sup {
 .info {
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 6px 12px -8px rgba(0, 0, 0, 0.15);
     justify-content: center;
     padding: 30px 0;
     column-gap: 28px;
@@ -265,9 +270,15 @@ h2 {
     font-size: 9px;
 }
 
+.tel-contacts {
+    margin: 0;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+    border: none;
+}
 
-
-hr {
+.pop {
     margin: 35px 0;
     border: none;
     border-top: 1px solid #e4e4ec;
@@ -369,7 +380,7 @@ figure a {
 }
 
 .main-info {
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     column-gap: 28px;
 }
@@ -379,14 +390,16 @@ figure a {
     padding: 0;
 }
 
-
-
 .categories li {
     background-color: #e4e4ec;
 }
 
 .categories li:hover .dropdown {
     display: block;
+}
+
+.menu li:last-child {
+    border-radius: 0 0 3px 3px;
 }
 
 .dropdown a {
@@ -420,7 +433,7 @@ figure a {
     padding: 10px 15px;
     font-size: 14px;
     font-family: "Arial";
-    border-bottom: 1px solid #cecedd;
+    border-top: 1px solid #cecedd;
     text-decoration: none;
     line-height: 1.7em;
 }
@@ -542,10 +555,7 @@ footer {
     padding: 2px;
 }
 
-.houses {
-    margin: 0 auto;
 
-}
 
 .skypee {
     position: relative;
@@ -556,7 +566,7 @@ footer {
     position: absolute;
     background: url(../images/skype.svg) no-repeat;
     width: 17px;
-    height: 17px;
+    height: 18px;
     left: -15%;
 }
 
@@ -1022,9 +1032,6 @@ h4 {
     font-family: "Roboto Slab";
 }
 
-iframe {
-    width: 100%;
-}
 
 .forms {
     display: flex;
@@ -1157,6 +1164,19 @@ input {
     margin: 10px 0;
 }
 
+.dropdown {
+    width: 100%;
+
+}
+
+.dropdown a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-family: "Arial";
+    border: none;
+}
+
 .formas h4 {
     margin-bottom: 10px;
 }
@@ -1179,6 +1199,31 @@ footer {
     background: rgba(0, 0, 0, 0.6);
     z-index: 9;
 }
+
+
+
+svg {
+    fill: #fff;
+}
+
+svg:hover {
+    fill: #fd8300;
+}
+
+.menu>li:hover>a:before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background: none;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+}
+
 
 .popup {
     display: none;
@@ -1374,17 +1419,15 @@ figure img {
     content: "";
     position: absolute;
     width: 6px;
-    height: 12px;
-    border-right: 2px solid #484989;
-    border-bottom: 2px solid #484989;
-    top: -2px;
+    height: 10px;
+    border-right: 2px solid #1f1f56;
+    border-bottom: 2px solid #1f1f56;
+    top: 0;
     left: 5px;
     transform: scale(0) rotate(45deg);
     transform-origin: center;
     transition: 0.2s ease;
 }
-
-
 
 .list.active ul {
     display: flex;
@@ -1405,10 +1448,10 @@ figure img {
     border-radius: 2px;
 }
 
+
 .menu a {
     display: block;
     padding: 10px 20px;
-    color: #25252c;
     line-height: 24px;
     font-weight: 700;
 }
@@ -1442,6 +1485,10 @@ figure img {
     z-index: 10;
 }
 
+.houses {
+    margin: 0 auto;
+}
+
 .list ul.active-burger li a {
     color: #fff;
     font-size: 2rem;
@@ -1456,14 +1503,31 @@ figure img {
     transform: scale(1) rotate(45deg);
 }
 
+thead {
+    white-space: nowrap;
+}
+
+tbody {
+    white-space: nowrap;
+}
+
 .table {
     overflow-x: scroll;
 }
+
 
 .popularr {
     overflow: scroll;
     display: flex;
 
+}
+
+figure{
+    margin-bottom: 10px;
+}
+
+iframe{
+    width: 320px;
 }
 
 @media screen and (min-width:388px) {
@@ -1491,6 +1555,13 @@ figure img {
     .contakts {
         justify-content: center;
 
+    }
+     .houses {
+        margin: 0;
+    }
+
+    iframe{
+        width: 560px;
     }
 }
 
@@ -1564,6 +1635,22 @@ figure img {
         display: none;
     }
 
+    .about {
+        margin: 0;
+    }
+
+    .houses {
+        margin: 0;
+    }
+
+    .main-wrap {
+        justify-content: space-between;
+    }
+
+
+    .contact {
+        flex-direction: row;
+    }
 
     .up {
         display: flex;
@@ -1606,24 +1693,26 @@ figure img {
 
 @media (min-width: 1024px) {
 
-    .form-footer{
+
+    .form-footer {
         justify-content: flex-start;
     }
 
-    .form-footer{
+    .form-footer {
         flex-direction: row;
         flex-wrap: nowrap;
 
     }
-    .checkbox{
-        margin-left: 90px;
+
+    .checkbox {
+        margin-left: 60px;
     }
 
-    .btn-submit{
+    .btn-submit {
         width: auto;
     }
 
-    .contact-form #tema{
+    .contact-form #tema {
         width: 480px;
     }
 
@@ -1632,7 +1721,7 @@ figure img {
     }
 
     .contact-form #tel {
-        width: 230px;
+        width: 236px;
     }
 
     .contact-form #text {
@@ -1647,6 +1736,7 @@ figure img {
     .forms {
         flex-wrap: nowrap;
     }
+
     .popularr {
         display: flex;
         flex-direction: row;
@@ -1677,10 +1767,19 @@ figure img {
         overflow: visible;
     }
 
-
+    
+    
+    
 }
 
 @media screen and (min-width: 1250px) {
+    aside{
+        order: 0;
+    }
+    
+    .menu {
+        width: 240px;
+    }
     h3 {
         justify-content: start;
     }
@@ -1688,11 +1787,6 @@ figure img {
     .information {
         display: flex;
 
-    }
-
-
-    .menu {
-        min-width: 250px;
     }
 
     .main-info {
