@@ -44,7 +44,7 @@ sup {
     background: url(../images/phone.svg);
     width: 17px;
     height: 17px;
-    left: -25px;
+    left: -21px;
     top: 1px;
 }
 
@@ -274,10 +274,7 @@ h2 {
 
 .tel-contacts {
     margin: 0;
-    width: 1px;
-    height: 51px;
-    background-color: #e4e4ec;
-    border: none;
+    display: none;
 }
 
 .pop {
@@ -1524,11 +1521,11 @@ tbody {
 
 }
 
-figure{
+figure {
     margin-bottom: 10px;
 }
 
-iframe{
+iframe {
     width: 320px;
 }
 
@@ -1558,11 +1555,12 @@ iframe{
         justify-content: center;
 
     }
-     .houses {
+
+    .houses {
         margin: 0;
     }
 
-    iframe{
+    iframe {
         width: 560px;
     }
 }
@@ -1706,6 +1704,15 @@ iframe{
 
     }
 
+    .tel-contacts {
+        display: block;
+        margin: 0;
+        width: 1px;
+        height: 51px;
+        background-color: #e4e4ec;
+        border: none;
+    }
+
     .checkbox {
         margin-left: 60px;
     }
@@ -1769,19 +1776,20 @@ iframe{
         overflow: visible;
     }
 
-    
-    
-    
+
+
+
 }
 
 @media screen and (min-width: 1250px) {
-    aside{
+    aside {
         order: 0;
     }
-    
+
     .menu {
         width: 240px;
     }
+
     h3 {
         justify-content: start;
     }
