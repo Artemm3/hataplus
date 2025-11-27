@@ -12,6 +12,11 @@ p {
     width: 100%;
 }
 
+.none{
+    background-color: transparent;
+    width: 200px;
+}
+
 .darkgrey {
     background-color: #dcdce5;
 }
@@ -171,7 +176,7 @@ li {
 .sale-block {
     padding-top: 35px;
     padding-bottom: 35px;
-    background: url(https://github.com/Artemm3/hataplus/blob/master/newsimg/container.png?raw=true);
+    background: url(https://github.com/Artemm3/hataplus/blob/master/newsimg/container.png?raw=true) #fd8300;
     text-align: center;
 }
 
