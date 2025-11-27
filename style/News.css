@@ -55,12 +55,7 @@ p {
     text-decoration: none;
 }
 
-.info-logo span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background: url() no-repeat;
-}
+
 
 .text-block {
     padding-bottom: 35px;
@@ -216,7 +211,6 @@ li {
     width: 35px;
     height: 35px;
     margin-left: 5px;
-    background: url() no-repeat;
     background-position: center center;
 }
 
