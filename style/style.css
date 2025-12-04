@@ -679,7 +679,6 @@ footer {
     font-size: 14px;
     line-height: 24px;
     color: #fd8300;
-    font-weight: bold;
     font-family: "Arial";
     transition: 1s;
 }
@@ -1451,7 +1450,6 @@ figure img {
     display: block;
     padding: 10px 20px;
     line-height: 24px;
-    font-weight: 700;
 }
 
 .up {
